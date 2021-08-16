@@ -6,8 +6,13 @@ namespace SuperBasicRPG
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
+            Console.WriteLine("┌─────────────────────────────┐\n│ Welcome to Super Basic RPG! │\n└─────────────────────────────┘");
+            
+            
+            
+            
+            
+            // I have no idea where to start...
         }
 
     }
