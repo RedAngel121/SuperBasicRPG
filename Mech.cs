@@ -23,10 +23,37 @@ namespace SuperBasicRPG
     }
     class Mech
     {
-        decimal scriptLevel { get; set; }
-        string scriptType { get; set; }
-        string scriptName { get; set; }
-        string scriptDescription { get; set; }
+        string mechWeight { get; set; }
+        string mechName { get; set; }
+        string mechDescription { get; set; }
+        int mechWalkSpeed { get; set; }
+        int mechRunSpeed { get; set; }
+        int mechJumpSpeed { get; set; }
+        string mechWeapon { get; set; }
+        int mechBattleValue { get; set; }
+        string mechPilot { get; set; }
+        int mechPilotSkill { get; set; }
+        int mechGunSkill { get; set; }
+        int mechArmor_RightArm { get; set; }
+        int mechArmor_RightLeg { get; set; }
+        int mechArmor_RightTorso { get; set; }
+        int mechArmor_RightTorso_Rear { get; set; }
+        int mechArmor_LeftArm { get; set; }
+        int mechArmor_LeftLeg { get; set; }
+        int mechArmor_LeftTorso { get; set; }
+        int mechArmor_LeftTorso_Rear { get; set; }
+        int mechArmor_CenterTorso { get; set; }
+        int mechArmor_CenterTorso_Rear { get; set; }
+        int mechArmor_Head { get; set; }
+        int mechInternal_RightArm { get; set; }
+        int mechInternal_RightLeg { get; set; }
+        int mechInternal_RightTorso { get; set; }
+        int mechInternal_LeftArm { get; set; }
+        int mechInternal_LeftLeg { get; set; }
+        int mechInternal_LeftTorso { get; set; }
+        int mechInternal_CenterTorso { get; set; }
+        int mechInternal_Head { get; set; }
+        int mechHeat { get; set; }
 
     }
 

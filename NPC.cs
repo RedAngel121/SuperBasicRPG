@@ -23,6 +23,7 @@ namespace SuperBasicRPG
         int strength { get; set; }
         int dexterity { get; set; }
         int constitution { get; set; }
+        int vitality { get; set; }
         int perception { get; set; }
         int endurance { get; set; }
         int charisma { get; set; }

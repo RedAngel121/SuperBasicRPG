@@ -13,7 +13,10 @@ namespace SuperBasicRPG
     {
         None, Acid, Anti, Art, Card, Crystal, Death, Earth, Electric, Fire, Gravity, Hair, Holy, Ice, Lava, Life, Light, Magiscript, Metal, Mind, Music, Plant, Shadow, Shield, Sonic, Tech, Time, Water, Wind
     }
-
+    enum BulkTrade
+    {
+        Tiny, Puny, Compact, Small, Unpleasant, Sleek, Subpar, Average, Adequate, Unique, Sizeable, Substantial, Significant, Enormous, Colossal, Extensive, Massive, Ridiculous, LargerThanLife, Galactic, TOOMUCH
+    }
     class Item
     {
         int price { get; set; }
@@ -23,33 +26,6 @@ namespace SuperBasicRPG
         string weaponType { get; set; }
         string name { get; set; }
         string description { get; set; }
-
-
-
-
-
-        // Bulk Trade Goods
-        int bulkTradeTiny = 1;
-        int bulkTradePuny = 2;
-        int bulkTradeCompact = 4;
-        int bulkTradeSmall = 8;
-        int bulkTradeUnpleasant = 16;
-        int bulkTradeSleek = 32;
-        int bulkTradeSubpar = 64;
-        int bulkTradeAverage = 128;
-        int bulkTradeAdequate = 256;
-        int bulkTradeUnique = 512;
-        int bulkTradeSizeable = 1024;
-        int bulkTradeSubstantial = 2048;
-        int bulkTradeSignificant = 4096;
-        int bulkTradeEnormous = 8192;
-        int bulkTradeColossal = 16384;
-        int bulkTradeExtensive = 32768;
-        int bulkTradeMassive = 65536;
-        int bulkTradeRidiculous = 131072;
-        int bulkTradeLargerThanLife = 262144;
-        int bulkTradeGalactic = 524288;
-        int bulkTradeTOOMUCH = 1048576;
     }
 
 }

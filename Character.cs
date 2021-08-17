@@ -35,7 +35,7 @@ namespace SuperBasicRPG
         int maxSpeed { get; set; }
         int currentSpeed { get; set; }
         int maxWeight { get; set; }
-        int currentWeight { get; set; }
+        decimal currentWeight { get; set; }
         int level { get; set; }
         int baseDamage { get; set; }
         int currentExperience { get; set; }
@@ -51,4 +51,6 @@ namespace SuperBasicRPG
 
 }
 
-// eventuially I want to add the ability to do hit/miss, and have other skills factor into a roll
+// eventually I want to add the ability to do hit/miss, and have other skills factor into a roll.
+// To start I want to have an automatic character creation system to get things started.
+// 
