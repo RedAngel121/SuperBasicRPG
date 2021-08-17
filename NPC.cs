@@ -15,11 +15,10 @@ namespace SuperBasicRPG
     }
     class NPC
     {
-        public string characterBasicInfo;
         // This is going to be an automatic setup of NPC for the DM.
         // This needs to generate all stats, mats and abilities on demand.
-        // This must also keep a permanent copy of the NPC in a seperate file
-        // Potential auto-character creation tool?
+        // This must also keep a permanent copy of the NPC.
+        // Potential for player auto-character creation tool?
         int strength { get; set; }
         int dexterity { get; set; }
         int constitution { get; set; }
@@ -31,7 +30,7 @@ namespace SuperBasicRPG
         int agility { get; set; }
         int wisdom { get; set; }
         int luck { get; set; }
-        characterClass characterClass { get; set; }
+        CharacterClass characterClass { get; set; }
         int maxHealth { get; set; }
         int currentHealth { get; set; }
         int maxStamina { get; set; }

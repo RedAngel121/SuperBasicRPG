@@ -1,14 +1,12 @@
 namespace SuperBasicRPG
 {
-    enum characterClass
+    enum CharacterClass
     {
         Physical, Magical
     }
 
     class Character
     {
-        public string characterBasicInfo;
-        
         int strength { get; set; }
         int dexterity { get; set; }
         int constitution { get; set; }
@@ -20,7 +18,11 @@ namespace SuperBasicRPG
         int agility { get; set; }
         int wisdom { get; set; }
         int luck { get; set; }
-        characterClass characterClass { get; set; }
+        int education { get; set; }
+        int socialStanding { get; set; }
+        int morale { get; set; }
+        int psionics { get; set; }
+        CharacterClass characterClass { get; set; }
         // Character class is set by the initial dice rolls, if you assign higher STR then you get a physical class.
         // You are not allowed to roll the same number for each stat.
         // I may end up letting the player decide on a class but thats not going to be anytime soon.

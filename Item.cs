@@ -1,15 +1,15 @@
 namespace SuperBasicRPG
 {
-    enum material
+    enum Material
     {
         Copper, Tin, Brass, Aluminum, Lead, Silver, Corundum, Iron, Cold_Iron, Electrum, Steel, Malachite, Gold, Tungsten, Platinum, Orichalcum, Moonstone, Dwarven_Steel, Titanium, Mithril, Palladium, Dragon_Steel, Uranium_238, Irridium, Uranium_235, Inconel, Osmium, Adamantine, Anti_Matter, Solid_Helium
     }
-    enum physicalWeaponType
+    enum PhysicalWeaponType
     {
         Axe, Boomerang, Bow, Cane, Club, Crossbow, Dagger, Daibo, Explosive, Fist_Weapon, Flail, Hammer, Javelin, Mace, Magic_Orb, Pickaxe, Pistol, Polearm, Rifle, Scythe, Shotgun, Shovel, Spear, Stave, Sword, Unarmed, Wand, Whip
     }
 
-    enum magicalWeaponType
+    enum MagicalWeaponType
     {
         None, Acid, Anti, Art, Card, Crystal, Death, Earth, Electric, Fire, Gravity, Hair, Holy, Ice, Lava, Life, Light, Magiscript, Metal, Mind, Music, Plant, Shadow, Shield, Sonic, Tech, Time, Water, Wind
     }
