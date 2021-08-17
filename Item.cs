@@ -2,11 +2,11 @@ namespace SuperBasicRPG
 {
     enum material
     {
-        Copper, Tin, Brass, Aluminum, Lead, Silver, Corundum, Iron, Cold Iron, Electrum, Steel, Malachite, Gold, Tungsten, Platinum, Orichalcum, Moonstone, Dwarven Steel, Titanium, Mithril, Palladium, Dragon Steel, Uranium-238, Irridium, Uranium-235, Inconel, Osmium, Adamantine, Anti-Matter, Solid Helium
+        Copper, Tin, Brass, Aluminum, Lead, Silver, Corundum, Iron, Cold_Iron, Electrum, Steel, Malachite, Gold, Tungsten, Platinum, Orichalcum, Moonstone, Dwarven_Steel, Titanium, Mithril, Palladium, Dragon_Steel, Uranium_238, Irridium, Uranium_235, Inconel, Osmium, Adamantine, Anti_Matter, Solid_Helium
     }
     enum physicalWeaponType
     {
-        Axe, Boomerang, Bow, Cane, Club, Crossbow, Dagger, Daibo, Explosive, Fist Weapon, Flail, Hammer, Javelin, Mace, Magic Orb, Pickaxe, Pistol, Polearm, Rifle, Scythe, Shotgun, Shovel, Spear, Stave, Sword, Unarmed, Wand, Whip
+        Axe, Boomerang, Bow, Cane, Club, Crossbow, Dagger, Daibo, Explosive, Fist_Weapon, Flail, Hammer, Javelin, Mace, Magic_Orb, Pickaxe, Pistol, Polearm, Rifle, Scythe, Shotgun, Shovel, Spear, Stave, Sword, Unarmed, Wand, Whip
     }
 
     enum magicalWeaponType

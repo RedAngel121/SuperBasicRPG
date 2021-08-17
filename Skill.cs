@@ -2,7 +2,7 @@ namespace SuperBasicRPG
 {
     enum characterSkill
     {
-        Acrobatics, Animal Handling, Arcana, Athletics, Barter, Bluff, Climb, Crafting, Diplomacy, Disguise, Engineering, Fabrication, Flora, History, Insight, Intimidate, Investigation, Medicine, Mining, Perception, Perform, Persuasion, Religion, Sleight Of Hand, Stealth, Survival, Swim
+        Acrobatics, Animal_Handling, Arcana, Athletics, Barter, Bluff, Climb, Crafting, Diplomacy, Disguise, Engineering, Fabrication, Flora, History, Insight, Intimidate, Investigation, Medicine, Mining, Perception, Perform, Persuasion, Religion, Sleight_Of_Hand, Stealth, Survival, Swim
     }
 
     class Skill

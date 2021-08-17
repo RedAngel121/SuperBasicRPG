@@ -12,6 +12,7 @@ namespace SuperBasicRPG
         int strength { get; set; }
         int dexterity { get; set; }
         int constitution { get; set; }
+        int vitality { get; set; }
         int perception { get; set; }
         int endurance { get; set; }
         int charisma { get; set; }
@@ -29,6 +30,8 @@ namespace SuperBasicRPG
         int currentStamina { get; set; }
         int maxMana { get; set; }
         int currentMana { get; set; }
+        int maxEnergy { get; set; }
+        int currentEnergy { get; set; }
         int maxSpeed { get; set; }
         int currentSpeed { get; set; }
         int maxWeight { get; set; }
