@@ -13,7 +13,5 @@ namespace SuperBasicRPG
         decimal skillLevel { get; set; }
         string skillName { get; set; }
         string skillDescription { get; set; }
-
     }
-
 }

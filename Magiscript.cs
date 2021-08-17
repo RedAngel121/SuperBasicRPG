@@ -1,6 +1,5 @@
 namespace SuperBasicRPG
 {
-
     class Magiscript
     {
         // This file will house my Magicscript Construction data when I have a good plan for it.
@@ -9,7 +8,5 @@ namespace SuperBasicRPG
         string scriptType { get; set; }
         string scriptName { get; set; }
         string scriptDescription { get; set; }
-
     }
-
 }

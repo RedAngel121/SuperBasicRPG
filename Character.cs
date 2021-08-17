@@ -5,7 +5,6 @@ namespace SuperBasicRPG
     {
         Physical, Magical
     }
-
     class Character
     {
         public Character(string aName, string aRace, string aDesc)
@@ -53,14 +52,9 @@ namespace SuperBasicRPG
         string race { get; set; }
         string description { get; set; }
         int currency { get; set; }
-
         Item[] inventory { get; set; }
         Skill[] skillsList { get; set; }
-
     }
-
 }
-
 // eventually I want to add the ability to do hit/miss, and have other skills factor into a roll.
 // To start I want to have an automatic character creation system to get things started.
-// 

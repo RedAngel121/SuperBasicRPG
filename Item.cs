@@ -8,7 +8,6 @@ namespace SuperBasicRPG
     {
         Axe, Boomerang, Bow, Cane, Club, Crossbow, Dagger, Daibo, Explosive, Fist_Weapon, Flail, Hammer, Javelin, Mace, Magic_Orb, Pickaxe, Pistol, Polearm, Rifle, Scythe, Shotgun, Shovel, Spear, Stave, Sword, Unarmed, Wand, Whip
     }
-
     enum MagicalWeaponType
     {
         None, Acid, Anti, Art, Card, Crystal, Death, Earth, Electric, Fire, Gravity, Hair, Holy, Ice, Lava, Life, Light, Magiscript, Metal, Mind, Music, Plant, Shadow, Shield, Sonic, Tech, Time, Water, Wind
@@ -16,6 +15,7 @@ namespace SuperBasicRPG
     enum BulkTrade
     {
         Tiny, Puny, Compact, Small, Unpleasant, Sleek, Subpar, Average, Adequate, Unique, Sizeable, Substantial, Significant, Enormous, Colossal, Extensive, Massive, Ridiculous, LargerThanLife, Galactic, TOOMUCH
+        // These are listed in order of smallest to largest.
     }
     class Item
     {
@@ -27,5 +27,4 @@ namespace SuperBasicRPG
         string name { get; set; }
         string description { get; set; }
     }
-
 }

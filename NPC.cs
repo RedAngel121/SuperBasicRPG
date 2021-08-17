@@ -4,7 +4,6 @@ namespace SuperBasicRPG
     {
         Adon, Agro, Arlo, Azamarr, Baashar, Barak, Barton, Baske, Baxar, Blaiz, Caelan, Cassian, Clawsen, Colborn, Dagfinn, Dagrod, Dimian, Domnhar, Ebraheim, Eldermar, Embre, Esdel, Eune, Fangar, Favroe, Feron, Feston, Fintis, Gatlen, Gatlin, Gentar, Gethrod, Graff, Gunnar, Hagalbar, Hawke, Hemm, Henndar, Hezra, Hodus, Ishmael, Jakrin, Jareth, Jaris, Jather, Jerrick, Jessop, Jinto, Joz, Kadric, Kagran, Kaz, Kent, Khron, Kontas, Krinn, Lassrin, Lenox, Lothe, Lustros, Lydan, Malyen, Mavrek, Moki, Nazim, Nesso, Ophni, Pakker, Paquin, Paskel, Pike, Ptorik, Quintis, Rankar, Renham, Revvyn, Riordan, Rivik, Rourke, Roux, Ryven, Sarkin, Straus, Syrin, Talon, Tekren, Tez, Turrek, Tyvrik, Vadim, Vale, Varog, Verssek, Weston, Whit, Wulfe, Yorjan, Zaden, Zagaroth, Zenner
     }
-
     enum FemaleNames
     {
         Aeris, Afia, Agama, Anika, Annihya, Antia, Asralyn, Baakshi, Basak, Beatha, Beela, Belen, Braithe, Ciscra, Desmina, Dessa, Drusila, Elysa, Esmee, Esther, Estyn, Everen, Fidess, Hagar, Harper, Hartie, Heron, Herra, Ibera, Indie, Jesi, Jonna, Kessa, Ketra, Kory, Krynna, Kye, Larke, Lassona, Leska, Liris, Lunex, Lyla, Lynorr, Lynx, Maarika, Maeve, Magaltie, Merula, Minha, Morwena, Naima, Naphtalia, Orett, Palra, Partha, Pekka, Phlox, Phressa, Pret, Ralia, Rasy, Razra, Rei, Renalee, Resha, Reslyn, Rhays, Rhiannon, Rydna, Sage, Semet, Shike, Silene, Soko, Sonali, Sparrow, Surane, Syrana, Taewen, Talis, Tamrin, Temy, Tessel, Tezani, Thesra, Tisette, Tiv, Turi, Varin, Vemery, Vita, Vixra, Wren, Xavia, Yarri, Yelina, Yuni, Zara, Zet
@@ -48,10 +47,7 @@ namespace SuperBasicRPG
         string race { get; set; }
         string description { get; set; }
         int currency { get; set; }
-
         Item[] inventory { get; set; }
         Skill[] skillsList { get; set; }
-
     }
-
 }

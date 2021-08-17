@@ -4,7 +4,6 @@ namespace SuperBasicRPG
     {
         // Light Mechs: https://www.sarna.net/wiki/Category:Light_BattleMechs
         Adder_Puma, AgroMech_Achernar_IndustrialMechs, AgroMech_Mk_II, Anubis, Arbalest, Arbiter, Arctic_Cheetah_Hankyu, Arctic_Fox, Arion, Battle_Hawk, Bear_Cub, Blade, Brigand, Cadaver, Carbine, CattleMaster, Cephalus, Commando, Commando_IIC, Copper, Copperhead, Cossack, Cougar, Crimson_Hawk, Crosscut, Dart, DemolitionMech, Dig_King, Dola, Duan_Gung, Eagle, Ebony, Eyrie, Falcon, Falcon_Hawk, Fire_Ant, Fire_Falcon, Fire_Moth_Dasher, Fireball, Firebee, Firefly, Firestarter, Flashfire, Flea, Fwltur, Gambit, Garm, Gùn, Gunsmith, Gurkha, Hackman_MechAssault, Hammer, Harvester, Harvester_Ant, Havoc, Hedgehog, Hellion, Hermes, Hitman, Hollander, Horned_Owl_Peregrine, Hornet, Howler_Baboon, Hussar, Icestorm, Incubus_Vixen, Incubus_II, Inquisitor_SecurityMech, Jackal, Jackalope, Jackrabbit, Jaguar, Javelin, Jenner, Jenner_IIC, Kabuto, Kit_Fox_Uller, Koshi, Koto, Locust, Locust_IIC, Longshot, Malak, Mandrill, Mantis, Marco, Mercury, Mist_Lynx_Koshi, Mjolnir, MM_1_MiningMech, Mongoose, Morrigan, Nexus, Night_Hawk, Nyx, Ocelot, Osiris, Ostscout, Ostscout_IIC, Owens, Pacifier, Pack_Hunter, Pack_Hunter_II, Panther, Parash, Pathfinder, Peacemaker_IndustrialMech, Phoenix_Hawk_L, Piranha, Porcupine, Powerman, Pwwka, Raptor, Rattlesnake, Raven, Razorback, Red_Shift, Reptar, Revenant, Rokurokubi, SalvageMech, Scarabus, Shugosha, Silver_Fox, Sling, Snow_Fox, Sokuryou, Solitaire, Spector, Spider, Spindrift, Spirit, Stiletto, Stinger, Stinger_IIC, Stinger_LAM, Storm_Raider, Super_Wasp, Talon, Tarantula, Thorn, Tiburon, Toro, Trooper, UrbanMech, UrbanMech_IIC, Valiant, Valkyrie, Venom, Wasp, Wasp_LAM, Wight, Wolfhound, Wolfhound_IIC, Wulfen, Yinghuochong
-
     }
     enum MediumMech
     {
@@ -54,7 +53,5 @@ namespace SuperBasicRPG
         int mechInternal_CenterTorso { get; set; }
         int mechInternal_Head { get; set; }
         int mechHeat { get; set; }
-
     }
-
 }

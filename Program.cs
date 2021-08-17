@@ -20,7 +20,7 @@ namespace SuperBasicRPG
                 {
                     Console.WriteLine("Please enter the race of your Character: ");
                     string userInputRace = Console.ReadLine();
-                    Console.WriteLine("Please enter the race of your Character: ");
+                    Console.WriteLine("Describe your character: ");
                     string userInputDesc = Console.ReadLine();
                     Character char1 = new Character(userInputName, userInputRace, userInputDesc);
                 }
