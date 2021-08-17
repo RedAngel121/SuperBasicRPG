@@ -1,3 +1,4 @@
+using System;
 namespace SuperBasicRPG
 {
     enum CharacterClass
@@ -7,6 +8,13 @@ namespace SuperBasicRPG
 
     class Character
     {
+        public Character(string aName, string aRace, string aDesc)
+        {
+            Console.WriteLine("Creating New Character...");
+            name = aName;
+            race = aRace;
+            description = aDesc;
+        }
         int strength { get; set; }
         int dexterity { get; set; }
         int constitution { get; set; }

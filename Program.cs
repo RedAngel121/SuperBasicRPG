@@ -6,11 +6,30 @@ namespace SuperBasicRPG
     {
         static void Main(string[] args)
         {
-            string userInput = "";
-            Console.WriteLine("┌─────────────────────────────┐\n│ Welcome to Super Basic RPG! │\n└─────────────────────────────┘\n\nPlease enter the name of your Character: ");
-            userInput = Console.ReadLine();
-            Console.WriteLine("You have chosen " + userInput);
-            // I have no idea where to start here...
+            try
+            {
+                Console.WriteLine("┌─────────────────────────────┐\n│ Welcome to Super Basic RPG! │\n└─────────────────────────────┘\n\nPlease enter the name of your Character: ");
+                string userInputName = Console.ReadLine();
+                Console.WriteLine("You have chosen " + userInputName);
+                if (userInputName == "existing char name")
+                {
+                    string openExistingChar = "Done";
+                    Console.WriteLine("You have chosen " + openExistingChar);
+                }
+                else
+                {
+                    Console.WriteLine("Please enter the race of your Character: ");
+                    string userInputRace = Console.ReadLine();
+                    Console.WriteLine("Please enter the race of your Character: ");
+                    string userInputDesc = Console.ReadLine();
+                    Character char1 = new Character(userInputName, userInputRace, userInputDesc);
+                }
+                // I have no idea where to start here...
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
     }
