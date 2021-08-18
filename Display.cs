@@ -23,6 +23,13 @@ namespace SuperBasicRPG
         {
             Console.WriteLine($"You have chosen {name}...");
         }
+        public static void MainMenu()
+        {
+            Character PC_Char = new Character();
+            Console.WriteLine($"------------  {PC_Char.GetName()} +  ------------\n\nLevel  + {PC_Char.GetLevel()} +  -  + {PC_Char.GetCurrentXP()} + / + {PC_Char.GetLevel() * 10} +  XP\nRace:  + {PC_Char.GetRace()} + \n + {PC_Char.GetCharacterClass()}? +  -  + {PC_Char.GetWeapon()} + \n + {PC_Char.GetHealthCurrent()} + / + {PC_Char.GetHealthMax()} +  Health + \n + {PC_Char.GetManaCurrent()} + / + {PC_Char.GetManaMax()} +  Mana + \n + \nUse \"roll [skill name]\" to use a skill + \n1. View Skills + \n2. Long Rest + \n3. Inventory Manager + \n4. Save and Quit + \n------------- + {/*dashExtender FIX THIS */PC_Char.GetName()} + -------------");
+            // I am not sure its going to work like this... but it'll work for now to stop some of the errors.
+            // I know there is a better way to handle this, I'll have to talk to dev about it.
 
+        }
     }
 }

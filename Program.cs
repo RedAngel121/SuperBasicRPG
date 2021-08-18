@@ -15,15 +15,17 @@ namespace SuperBasicRPG
             Display.OpeningBanner();
             do
             {
+                Display.InitialNameInputRequest();
                 userInputName = Console.ReadLine();
             } while (!currentChar.updateName(userInputName));
             Display.ChosenOne(currentChar.GetName());
-            // database!
-            if (userInputName == "The Name of an Existing Character")
+
+            if (currentChar.updateName(userInputName))
             {
-                string openExistingChar = "The Asshole";
-                Console.WriteLine("You have chosen " + openExistingChar);
+                Display.MainMenu();
             }
+
+            /*
             else
             {
                 Console.WriteLine("Please enter the race of your Character: ");
@@ -31,7 +33,8 @@ namespace SuperBasicRPG
                 Console.WriteLine("Describe your character: ");
                 string userInputDesc = Console.ReadLine();
             }
-            // I have a vague idea where to start here...
+            I have a vague idea where to start here...
+            */
         }
     }
 }
