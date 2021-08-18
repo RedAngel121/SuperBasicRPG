@@ -19,6 +19,12 @@ namespace SuperBasicRPG
             this.name = enteredName;
             return updateNameSuccessCheck;
         }
+        public bool updateRace(string enteredRace)
+        {
+            bool updateRaceSuccessCheck = false;
+            this.race = enteredRace;
+            return updateRaceSuccessCheck;
+        }
 
         internal string GetName()
         {
@@ -58,7 +64,7 @@ namespace SuperBasicRPG
         }
         internal int GetWeapon()
         {
-            return this.FIX_WeaponInfo;
+            return this.weaponInfo;
         }
         
     }

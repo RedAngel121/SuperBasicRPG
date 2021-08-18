@@ -7,19 +7,19 @@ namespace SuperBasicRPG
     class CharacterModel
     {
         protected string name { get; set; }
-        int strength { get; set; }
-        int intelligence { get; set; }
+        protected int strength { get; set; }
+        protected int intelligence { get; set; }
+        protected int maxHealth { get; set; }
+        protected int currentHealth { get; set; }
+        protected int maxMana { get; set; }
+        protected int currentMana { get; set; }
+        protected int level { get; set; }
+        protected int baseDamage { get; set; }
+        protected int currentExperience { get; set; }
+        protected string race { get; set; }
+        protected string description { get; set; }
+        protected decimal currency { get; set; }
         CharacterClass characterClass { get; set; }
-        int maxHealth { get; set; }
-        int currentHealth { get; set; }
-        int maxMana { get; set; }
-        int currentMana { get; set; }
-        int level { get; set; }
-        int baseDamage { get; set; }
-        int currentExperience { get; set; }
-        string race { get; set; }
-        string description { get; set; }
-        decimal currency { get; set; }
         Item[] inventory { get; set; }
         Skill[] skillsList { get; set; }
         /*
