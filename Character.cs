@@ -1,62 +1,30 @@
 using System;
 namespace SuperBasicRPG
 {
-    enum CharacterClass
+    class Character : CharacterModel
     {
-        Physical, Magical
-    }
-    class Character
-    {
-        public Character(string aName, string aRace, string aDesc)
+        public Character()
         {
             Console.WriteLine("Creating New Character...");
-            name = aName;
-            race = aRace;
-            description = aDesc;
         }
-        int strength { get; set; }
-        int intelligence { get; set; }
-        CharacterClass characterClass { get; set; }
         // Character class is set by the initial dice rolls, if you assign higher STR then you get a physical class.
         // You are not allowed to roll the same number for each stat.
         // I may end up letting the player decide on a class but thats not going to be anytime soon.
-        int level { get; set; }
-        int baseDamage { get; set; }
-        int currentExperience { get; set; }
-        string name { get; set; }
-        string race { get; set; }
-        string description { get; set; }
-        decimal currency { get; set; }
-        Item[] inventory { get; set; }
-        Skill[] skillsList { get; set; }
-        /*
-        int dexterity { get; set; }
-        int constitution { get; set; }
-        int vitality { get; set; }
-        int perception { get; set; }
-        int endurance { get; set; }
-        int charisma { get; set; }
-        int agility { get; set; }
-        int wisdom { get; set; }
-        int luck { get; set; }
-        int education { get; set; }
-        int socialStanding { get; set; }
-        int morale { get; set; }
-        int psionics { get; set; }
-        int maxHealth { get; set; }
-        int currentHealth { get; set; }
-        int maxMana { get; set; }
-        int currentMana { get; set; }
-        int maxEnergy { get; set; }
-        int currentEnergy { get; set; }
-        int maxStamina { get; set; }
-        int currentStamina { get; set; }
-        int maxSpeed { get; set; }
-        int currentSpeed { get; set; }
-        int maxWeight { get; set; }
-        decimal currentWeight { get; set; }
-        */
+        public bool updateName(string enteredName)
+        {
+            bool updateNameSuccessCheck = false;
+            // TODO: check list of existing names.
+            // return bool on success/failure of new name.
+            this.name = enteredName;
+            return updateNameSuccessCheck;
+        }
+
+        internal string GetName()
+        {
+            return this.name;
+        }
     }
 }
+
 // eventually I want to add the ability to do hit/miss, and have other skills factor into a roll.
-// To start I want to have an automatic character creation system to get things started.
+// To start I want to have an automatic character creation system to get things rolling.

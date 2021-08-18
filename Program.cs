@@ -1,34 +1,37 @@
 ﻿using System;
 namespace SuperBasicRPG
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            try
+            // Get list of '.char' files saved to the database.
+            // If no '.char' files exist, start making a new char.
+            // If old '.char' files exist, then find the name of the character and match it to the input.
+            // When matched correctly, the character will load into the menu.
+            string userInputName;
+            Character currentChar = new Character();
+            Display.OpeningBanner();
+            do
             {
-                Console.WriteLine("┌─────────────────────────────┐\n│ Welcome to Super Basic RPG! │\n└─────────────────────────────┘\n\nPlease enter the name of your Character: ");
-                string userInputName = Console.ReadLine();
-                Console.WriteLine("You have chosen " + userInputName + "...");
-                if (userInputName == "existing char name")
-                {
-                    string openExistingChar = "The Asshole";
-                    Console.WriteLine("You have chosen " + openExistingChar);
-                }
-                else
-                {
-                    Console.WriteLine("Please enter the race of your Character: ");
-                    string userInputRace = Console.ReadLine();
-                    Console.WriteLine("Describe your character: ");
-                    string userInputDesc = Console.ReadLine();
-                    Character char1 = new Character(userInputName, userInputRace, userInputDesc);
-                }
-                // I have a vague idea where to start here...
-            }
-            catch (System.Exception e)
+                userInputName = Console.ReadLine();
+            } while (!currentChar.updateName(userInputName));
+            Display.ChosenOne(currentChar.GetName());
+            // database!
+            if (userInputName == "The Name of an Existing Character")
             {
-                Console.WriteLine(e.Message);
+                string openExistingChar = "The Asshole";
+                Console.WriteLine("You have chosen " + openExistingChar);
             }
+            else
+            {
+                Console.WriteLine("Please enter the race of your Character: ");
+                string userInputRace = Console.ReadLine();
+                Console.WriteLine("Describe your character: ");
+                string userInputDesc = Console.ReadLine();
+            }
+            // I have a vague idea where to start here...
         }
     }
 }
