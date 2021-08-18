@@ -2,7 +2,7 @@ namespace SuperBasicRPG
 {
     enum Material
     {
-        Copper, Tin, Brass, Aluminum, Lead, Silver, Corundum, Iron, Cold_Iron, Electrum, Steel, Malachite, Gold, Tungsten, Platinum, Orichalcum, Moonstone, Dwarven_Steel, Titanium, Mithril, Palladium, Dragon_Steel, Uranium_238, Irridium, Uranium_235, Inconel, Osmium, Adamantine, Anti_Matter, Solid_Helium
+        Wood, Stone, Copper, Tin, Brass, Aluminum, Lead, Silver, Corundum, Iron, Cold_Iron, Electrum, Steel, Malachite, Gold, Tungsten, Platinum, Orichalcum, Moonstone, Dwarven_Steel, Titanium, Mithril, Palladium, Dragon_Steel, Uranium_238, Irridium, Uranium_235, Inconel, Osmium, Adamantine, Anti_Matter, Solid_Helium
     }
     enum PhysicalWeaponType
     {
