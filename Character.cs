@@ -5,12 +5,10 @@ namespace SuperBasicRPG
     {
         public Character()
         {
+            // WHERE/HOW DO I INITIALIZE THE DATABASE?
             Console.WriteLine("Checking Database...");
         }
-        // Character class is set by the initial dice rolls, if you assign higher STR then you get a physical class.
-        // You are not allowed to roll the same number for each stat.
-        // I may end up letting the player decide on a class but thats not going to be anytime soon.
-        public bool updateName(string enteredName)
+        public bool UpdateName(string enteredName)
         {
             bool updateNameSuccessCheck = false;
             // TODO: check list of existing names in the database.
@@ -19,13 +17,35 @@ namespace SuperBasicRPG
             this.name = enteredName;
             return updateNameSuccessCheck;
         }
-        public bool updateRace(string enteredRace)
+        public bool UpdateRace(string enteredRace)
         {
-            bool updateRaceSuccessCheck = false;
+            bool updateRaceSuccessCheck;
             this.race = enteredRace;
+            if (GetRace() == enteredRace)
+            {
+                updateRaceSuccessCheck = true;
+            }
+            else  // LET ME KNOW IF THIS IS COMPLETELY UNNECESSARY... or if I did it correctly (doubtful)
+            {
+                updateRaceSuccessCheck = false;
+            }
             return updateRaceSuccessCheck;
         }
+        public bool UpdateClass(string enteredClass)
+        {
+            this.characterClass = enteredClass;
+            bool updateClassSuccessCheck = true;   // This section is obviously wrong but I dont know how to fix it yet. 
+            return updateClassSuccessCheck;
+        }
 
+        internal string GetCharacterClass()
+        {
+            return this.characterClass; // TODO: FINISH THIS! I need to have the 'class choice option' functional in order to write to the DB
+        }
+        internal int GetWeapon()
+        {
+            return this.weaponInfo; // TODO: FINISH THIS! I need to have the weapon system semi-functional in order to write to the DB
+        }
         internal string GetName()
         {
             return this.name;
@@ -41,10 +61,6 @@ namespace SuperBasicRPG
         internal int GetCurrentXP()
         {
             return this.currentExperience;
-        }
-        internal string GetCharacterClass()
-        {
-            return this.characterClass;
         }
         internal int GetHealthCurrent()
         {
@@ -62,14 +78,6 @@ namespace SuperBasicRPG
         {
             return this.maxMana;
         }
-        internal int GetWeapon()
-        {
-            return this.weaponInfo;
-        }
-        
+
     }
 }
-/*
-eventually I want to add the ability to do hit/miss, and have other skills factor into a roll.
-To start I want to have an automatic character creation system to get things rolling.
-*/
