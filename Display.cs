@@ -23,6 +23,10 @@ namespace SuperBasicRPG
         {
             Console.WriteLine($"You have chosen {name}...");
         }
+        public static void ChooseClass()
+        {
+            Console.WriteLine("Physical or Magical?");
+        }
         public static void MainMenu()
         {
             Character PC_Char = new Character();

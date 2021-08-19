@@ -15,39 +15,9 @@ namespace SuperBasicRPG
     class NPC
     {
         // This is going to be an automatic setup of NPC for the DM.
-        // This needs to generate all stats, mats and abilities on demand.
-        // This must also keep a permanent copy of the NPC.
+        // This needs to generate all stats, items, and abilities on demand.
+        // This must also keep a permanent copy of the NPC with additional details.
         // Potential for player auto-character creation tool?
-        int strength { get; set; }
-        int dexterity { get; set; }
-        int constitution { get; set; }
-        int vitality { get; set; }
-        int perception { get; set; }
-        int endurance { get; set; }
-        int charisma { get; set; }
-        int intelligence { get; set; }
-        int agility { get; set; }
-        int wisdom { get; set; }
-        int luck { get; set; }
-        CharacterClass characterClass { get; set; }
-        int maxHealth { get; set; }
-        int currentHealth { get; set; }
-        int maxStamina { get; set; }
-        int currentStamina { get; set; }
-        int maxMana { get; set; }
-        int currentMana { get; set; }
-        int maxSpeed { get; set; }
-        int currentSpeed { get; set; }
-        int maxWeight { get; set; }
-        int currentWeight { get; set; }
-        int level { get; set; }
-        int baseDamage { get; set; }
-        int currentExperience { get; set; }
-        string name { get; set; }
-        string race { get; set; }
-        string description { get; set; }
-        int currency { get; set; }
-        Item[] inventory { get; set; }
-        Skill[] skillsList { get; set; }
+
     }
 }

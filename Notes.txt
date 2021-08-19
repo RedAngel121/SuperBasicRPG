@@ -1,10 +1,13 @@
 ✔ = Done
 ✖ = Cannot Complete
 
+
    ----- TODO: -----
 Get list of character names saved to the database.
+If no char names exist, default to start making a new char.
 Display list to choose which one to play?
-If no char names exist, start making a new char.
+If Existing Name is False, default to 'Create New Character'.
+Double check with the user to make sure they want to create a new char IF chars already exist.
 Character Class is set by the initial dice rolls, if you assign higher STR then you get a physical class.
 You are not allowed to roll the same number for each stat in the first revision.
 I may end up letting the player decide on a CUSTOM class but thats not going to be anytime soon.
@@ -17,6 +20,7 @@ Get a list of standard personal fantasy armor types, place it into the Item.cs f
 Eventually, tools and equipment will have a set value and can be bought and sold.
 All Equipment needs to have an 'equip' option.
 
+
    ----- WANT: -----
 Eventually I want to add the ability to do hit/miss, and have other skills factor into a roll.
 To start I want to have an automatic character creation system to get things rolling.
@@ -25,7 +29,21 @@ Eventually I want to add armor as well, like classic fantasy armor, and scifi "a
 I already have a file named 'Mech' so I think I have what it takes to get started there.
 I need to setup a list of skills that can be chosen by the player, should I limit the number of skills they can choose?
 
+What is --SemVer ?
+
+
    ----- Consider? -----
 Should I bite the bullet and just make a UI for this?
 Am I really considering making a full text based RPG? or just a framework for my game?
 FFS what am I doing with my life...
+
+
+   ----- Personal Opinion -----
+When dealing with different values that have similar names, snake is better.
+Creating a new variable that has no correlation to other variables gets to have camel.
+Nouns come before Adjectives when creating variables:
+   broccliNasty = true
+   coffeeBlack = "caffeine"
+   soda_Small = 6
+   soda_Large = 42
+I expect this to bite me in the ass later, but thats for Future Me to deal with.

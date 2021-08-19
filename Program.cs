@@ -6,24 +6,51 @@ namespace SuperBasicRPG
     {
         static void Main(string[] args)
         {
-            string userInputName, userInputRace, userInputDesc;
+            string userInputName, userInputRace, userInputDesc, userInputClass;
             Character currentChar = new Character();
             Display.OpeningBanner();
-            do
-            {
-                Display.InitialNameInputRequest();
-                userInputName = Console.ReadLine();
-            } while (!currentChar.UpdateName(userInputName));
-            
-            // I know this IF statement goes somewhere else but I cant be bothered to move it RN cause I dont know where to put it yet...
-            if (true/* IF The name doesnt exist... */)
+
+            // 1st search database for existing character names, if none exist then default to creating a new character.
+
+            void CreateNewChar()
             {
                 Display.InitialRaceInputRequest();
                 userInputRace = Console.ReadLine();
                 Display.InitialDescInputRequest();
                 userInputDesc = Console.ReadLine();
+                // Description should be optional.
+                Display.ChooseClass();
+                userInputClass = Console.ReadLine();
+                /* 
+                Generate STR/INT Stats, double for health/mana.
+                Match health/mana max and current.
+                Lvl 1, Exp 0, Base dmg based on level and STR
+                Add Wooden Sword or Wooden Wand based on class.
+                Finally, Write to character sheet.
+                */
             }
-            Display.ChosenOne(currentChar.GetName());
+
+            void OpenExistingChar()
+            {
+                // Access Database and retireve info.
+            }
+
+            do
+            {
+                Display.InitialNameInputRequest();
+                userInputName = Console.ReadLine();
+            } while (!currentChar.UpdateName(userInputName));
+
+            if (currentChar.GetName() == "Existing Database Name")
+            {
+                OpenExistingChar();
+                Display.ChosenOne(currentChar.GetName());
+            }
+            else
+            {
+                CreateNewChar();
+            }
+            OpenExistingChar(); // Complete This Function so it will open a newly created character as well.
             Display.MainMenu();
         }
     }

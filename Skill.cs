@@ -10,8 +10,9 @@ namespace SuperBasicRPG
     }
     class Skill
     {
-        decimal skillLevel { get; set; }
+        decimal skillBaseLevel { get; set; }
+        decimal skillBonus { get; set; }
         string skillName { get; set; }
-        // string skillDescription { get; set; }
+        string skillDescription { get; set; }
     }
 }

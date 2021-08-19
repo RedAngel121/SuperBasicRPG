@@ -1,19 +1,18 @@
 using System;
 namespace SuperBasicRPG
 {
-    class Character : CharacterModel
+    class Character : EntityLivingModel
     {
         public Character()
         {
-            // WHERE/HOW DO I INITIALIZE THE DATABASE?
+            // WHERE/HOW DO I INITIALIZE THE DATABASE???
+            // Seperate file called database.cs where all that information takes place.
+            // Once I get the database initialization completed I wont have to worry about it, Set it and Forget it.
             Console.WriteLine("Checking Database...");
         }
         public bool UpdateName(string enteredName)
         {
             bool updateNameSuccessCheck = false;
-            // TODO: check list of existing names in the database.
-            // If Existing Name is False, send to 'Create New Character'.
-            // Double check with the user to make sure they want to create a new char IF chars already exist.
             this.name = enteredName;
             return updateNameSuccessCheck;
         }
@@ -25,7 +24,7 @@ namespace SuperBasicRPG
             {
                 updateRaceSuccessCheck = true;
             }
-            else  // LET ME KNOW IF THIS IS COMPLETELY UNNECESSARY... or if I did it correctly (doubtful)
+            else  // LET ME KNOW IF THIS IS COMPLETELY UNNECESSARY... or if I did it correctly (which is doubtful)
             {
                 updateRaceSuccessCheck = false;
             }
@@ -40,11 +39,15 @@ namespace SuperBasicRPG
 
         internal string GetCharacterClass()
         {
-            return this.characterClass; // TODO: FINISH THIS! I need to have the 'class choice option' functional in order to write to the DB
+            return this.characterClass; // I need to have the 'class choice option' functional in order to write to the DB
         }
         internal int GetWeapon()
         {
-            return this.weaponInfo; // TODO: FINISH THIS! I need to have the weapon system semi-functional in order to write to the DB
+            return this.weaponInfo; // I need to have the weapon system semi-functional in order to write to the DB
+        }
+        internal int GetTool()
+        {
+            return this.toolInfo; // I need to have the tool system semi-functional in order to write to the DB
         }
         internal string GetName()
         {
@@ -60,23 +63,23 @@ namespace SuperBasicRPG
         }
         internal int GetCurrentXP()
         {
-            return this.currentExperience;
+            return this.experience;
         }
         internal int GetHealthCurrent()
         {
-            return this.currentHealth;
+            return this.health_Current;
         }
         internal int GetHealthMax()
         {
-            return this.maxHealth;
+            return this.health_Max;
         }
         internal int GetManaCurrent()
         {
-            return this.currentMana;
+            return this.mana_Current;
         }
         internal int GetManaMax()
         {
-            return this.maxMana;
+            return this.mana_Max;
         }
 
     }

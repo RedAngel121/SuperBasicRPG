@@ -1,29 +1,31 @@
+// This file is to hold basic information that all living items have in common. Mainly Stats.
 namespace SuperBasicRPG
 {
     enum CharacterClass
     {
         Physical, Magical
     }
-    class CharacterModel
+    class EntityLivingModel
     {
-        Item[] inventory { get; set; }
-        Skill[] skillsList { get; set; }
-        CharacterClass characterClass { get; set; } // Chosen during character creation.
+        // Item[] inventory { get; set; }
+        // Skill[] skillsList { get; set; }
+        // CharacterClass characterClass { get; set; }
         // Stats Start here...
         protected string name { get; set; }
         protected string race { get; set; }
         protected string description { get; set; }
         protected decimal currency { get; set; }
         protected int level { get; set; }
-        protected int currentExperience { get; set; }
+        protected int experience { get; set; }
         protected int strength { get; set; }
         protected int intelligence { get; set; }
         // Stats above determine Stats below
-        protected int maxHealth { get; set; }
-        protected int currentHealth { get; set; }
-        protected int maxMana { get; set; }
-        protected int currentMana { get; set; }
+        protected int health_Max { get; set; }
+        protected int health_Current { get; set; }
+        protected int mana_Max { get; set; }
+        protected int mana_Current { get; set; }
         protected int baseDamage { get; set; }
+        protected int damage_Max { get; set; }
         /*
         protected int dexterity { get; set; }
         protected int constitution { get; set; }
@@ -39,14 +41,19 @@ namespace SuperBasicRPG
         protected int morale { get; set; }
         protected int psionics { get; set; }
         // Stats above determine Stats below
-        protected int maxEnergy { get; set; }
-        protected int currentEnergy { get; set; }
-        protected int maxStamina { get; set; }
-        protected int currentStamina { get; set; }
-        protected int maxSpeed { get; set; }
-        protected int currentSpeed { get; set; }
-        protected int maxWeight { get; set; }
-        protected decimal currentWeight { get; set; }
+        protected int energy_Max { get; set; }
+        protected int energy_Current { get; set; }
+        protected int stamina_Max { get; set; }
+        protected int stamina_Current { get; set; }
+        protected int speed_Max { get; set; }
+        protected decimal speed_Current { get; set; }
+        protected int weight_Max { get; set; }
+        protected decimal weight_Current { get; set; }
+        protected int armor_Natural { get; set; }
+        protected int armor_Fabricated { get; set; }
+        protected int armor_Magic { get; set; }
+        protected int armor_Base { get; set; }
+        
         */
 
     }
