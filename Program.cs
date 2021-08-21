@@ -1,11 +1,11 @@
 ﻿using System;
 namespace SuperBasicRPG
 {
-
     class Program
     {
         static void Main(string[] args)
         {
+            Database.CreateDataBase();
             string userInputName, userInputRace, userInputDesc, userInputClass;
             Character currentChar = new Character();
             Display.OpeningBanner();

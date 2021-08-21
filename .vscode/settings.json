@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "SBRPG",
+            "database": "${workspaceFolder:SuperBasicRPG}/SBRPG.ctrl"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

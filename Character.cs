@@ -29,7 +29,7 @@ namespace SuperBasicRPG
                 updateRaceSuccessCheck = false;
             }
             return updateRaceSuccessCheck;
-        }
+        }/*
         public bool UpdateClass(string enteredClass)
         {
             this.characterClass = enteredClass;
@@ -49,6 +49,7 @@ namespace SuperBasicRPG
         {
             return this.toolInfo; // I need to have the tool system semi-functional in order to write to the DB
         }
+        */
         internal string GetName()
         {
             return this.name;
