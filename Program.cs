@@ -1,5 +1,4 @@
-﻿// am i going to get the DB up and running today?
-using System;
+﻿using System;
 namespace SuperBasicRPG
 {
     class Program
