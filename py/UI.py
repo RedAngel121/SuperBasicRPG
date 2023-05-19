@@ -49,6 +49,10 @@ def open_inventory_window():
     quit_button = tk.Button(inventory_window, text="Quit", command=inventory_window.destroy)
     quit_button.pack(side=tk.TOP)  # Align to the right side with padding
 
+def close_inventory_tab(tab):
+    # Remove the tab from the notebook
+    notebook.forget(tab)
+
 def quit_game():
     print("Quitting the game...")
     # Add any cleanup or saving logic here
@@ -59,10 +63,14 @@ def open_inventory():
     inventory_tab = ttk.Frame(notebook)
     notebook.add(inventory_tab, text="Inventory")
 
+    # Create a close button for the tab
+    close_button = ttk.Button(inventory_tab, text="X", width=10, command=lambda: close_inventory_tab(inventory_tab))
+    close_button.pack(side=tk.RIGHT, padx=5, pady=5)
+
     # Add content to the inventory tab
     inventory_label = ttk.Label(inventory_tab, text="Inventory Content")
     inventory_label.pack(padx=10, pady=10)
-    
+
 # Create the main window
 root = tk.Tk()
 root.title("Super Basic RPG")
