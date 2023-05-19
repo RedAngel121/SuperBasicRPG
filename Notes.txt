@@ -5,21 +5,22 @@
    ----- TODO: -----
 Get list of character names saved to the database.
 If no char names exist, default to start making a new char.
-Display list to choose which one to play?
-If Existing Name is False, default to 'Create New Character'.
-Double check with the user to make sure they want to create a new char IF chars already exist.
+Or display list to choose which one to play? allow name input? 
+   If Existing Name is False, default to 'Create New Character'.
+Double check with the user to make sure they want to create a new char IF any chars already exist.
+If old char names exist, then match it to the input.
+   list names of characters the player has accesss to?
+When matched correctly, the character will load into the menu.
+Menu has a few options; use/view skill, rest, inventory, quit.
+   Get a list of standard personal fantasy armor types, place it into a default items file for future use.
+Eventually, tools and equipment will have a set currency value and can be bought and sold.
+All Equipment needs to have an 'equip' option that relates to a skill.
+
+if the user is looking to create a new character:
 Character Class is set by the initial dice rolls, if you assign higher STR then you get a physical class.
 You are not allowed to roll the same number for each stat in the first revision.
 I may end up letting the player decide on a CUSTOM class but thats not going to be anytime soon.
 Starter Weapon will be a wooden sword/wand all stats will start at random based on class chosen.
-
-If old char names exist, then match it to the input.
-When matched correctly, the character will load into the menu.
-Double check with the user to make sure they want to create a new char IF chars already exist.
-Menu has a few options; use/view skill, rest, inventory, quit.
-Get a list of standard personal fantasy armor types, place it into the Item.cs file for future use.
-Eventually, tools and equipment will have a set value and can be bought and sold.
-All Equipment needs to have an 'equip' option that relates to a skill.
 
 
    ----- WANT: -----
@@ -29,8 +30,7 @@ Once the database is setup and functional, I can create a character and edit it.
 Eventually I want to add armor as well, like classic fantasy armor, and scifi "armors" too.
 I already have a file named 'Mech' so I think I have what it takes to get started there.
 I need to setup a list of skills that can be chosen by the player, should I limit the number of skills they can choose?
-
-What is --SemVer ?
+   maybe a skill tree where it starts simple and moved into complex as you level up
 
 
    ----- Consider? -----
@@ -40,7 +40,7 @@ FFS what am I doing with my life...
 
 
    ----- Personal Opinion -----
-When dealing with different values that have similar names, snake is better.
+When dealing with different values that have similar names, snake_is_better.
 Creating a new variable that has no correlation to other variables gets to have camel.
 Nouns come before Adjectives when creating variables:
    broccliNasty = true
